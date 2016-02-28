@@ -3,8 +3,7 @@ $(document).ready(function(){
 	var number, count, userGuess;
 
   	var setNumber = function(){
-  		var number = Math.floor(Math.random() * 101);
-  		return number;
+  		number = Math.floor(Math.random() * 101);
   	}
 
   	var newGame = function(){
@@ -20,7 +19,7 @@ $(document).ready(function(){
   			alert('You must input a number to continue.');
   			return false;
   		}
-  		if(userGuess < 0 || Guess > 101){
+  		if(userGuess < 0 || userGuess > 101){
   			alert('You must input a number between 0 and 100 to continue.');
   			return false;
   		}
