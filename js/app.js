@@ -63,7 +63,7 @@ $(document).ready(function(){
   		}
   	}
 
-	//Functionality Section:
+	//Functionality Section
 
 	newGame();
 
